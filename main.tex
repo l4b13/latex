@@ -1,0 +1,125 @@
+\documentclass[a4paper,12pt]{article}
+
+%%% Работа с русским языком
+\usepackage{cmap}					% поиск в PDF
+\usepackage{mathtext} 				% русские буквы в формулах
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+
+%%% Страница
+\usepackage{extsizes} % Возможность сделать 14-й шрифт
+\usepackage{geometry} % Простой способ задавать поля
+	\geometry{top=20mm}
+	\geometry{bottom=20mm}
+	\geometry{left=20mm}
+	\geometry{right=15mm}
+\usepackage{fancyhdr} % Колонтитулы
+
+\usepackage{setspace} % Интерлиньяж
+% \onehalfspacing % Интерлиньяж 1.5
+
+\pagestyle{empty}
+
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames,svgnames,table,rgb]{xcolor}
+\hypersetup{				% Гиперссылки
+    unicode=true,           % русские буквы в раздела PDF
+    pdftitle={Заголовок},   % Заголовок
+    pdfauthor={Автор},      % Автор
+    pdfsubject={Тема},      % Тема
+    pdfcreator={Создатель}, % Создатель
+    pdfproducer={Производитель}, % Производитель
+    pdfkeywords={keyword1} {key2} {key3}, % Ключевые слова
+    colorlinks=true,       	% false: ссылки в рамках; true: цветные ссылки
+    linkcolor=black,        % внутренние ссылки
+    citecolor=black,        % на библиографию
+    filecolor=blue,         % на файлы
+    urlcolor=blue           % на URL
+}
+
+\usepackage{indentfirst} % отступ после заголовка
+
+\usepackage{multicol} % Несколько колонок
+
+\usepackage{csquotes} % Инструменты для ссылок
+
+%%% Работа с картинками
+\usepackage{graphicx}  % Для вставки рисунков
+\graphicspath{{images/}}  % папки с картинками
+\setlength\fboxsep{3pt} % Отступ рамки \fbox{} от рисунка
+\setlength\fboxrule{1pt} % Толщина линий рамки \fbox{}
+\usepackage{wrapfig} % Обтекание рисунков и таблиц текстом
+
+\title{resume}
+%\author{Vladislav Obudov}
+%\date{May 2022}
+
+
+\begin{document}
+
+\begin{center}
+    {\largeРезюме}
+\end{center}
+
+\begin{wrapfigure}{r}{0pt}
+    \includegraphics[scale=0.7]{004.jpg}
+\end{wrapfigure}
+
+ФИО: Обудов Владислав Антонович
+
+Дата рождения: 14.09.1999
+
+Семейное положение: холост
+
+Гражданство: РФ
+
+Телефон: +7 (911) 796-73-55
+
+E-mail: vlad\_dkfl@bk.ru
+
+Цель трудоустройства: прохождение практики\\
+
+Образование:
+
+2020 г. по наст. время ФГАОУ ВПО «СВФУ им. М. К. Аммосова», направление Фундаментальная информатика и информационные технологии\\
+
+Опыт работы:
+
+2022 г. по наст. время --- ГАУ ДО РС(Я) «МАН РС(Я)» --- диспетчер образовательного учреждения
+
+Обязанности:
+\begin{itemize}
+    \setlength\itemsep{0pt}
+    \item работа с электронными документами (дистанционно)
+    \item помощь в организации олимпиад по информатике (дистанционно)\\
+\end{itemize}
+
+Дополнительно:
+
+Не военнообязанный (пройдена контрольная медкомиссия, была поставлена категория В, военный билет еще не получен)
+
+Владение языками:
+
+\begin{itemize}
+    \setlength\itemsep{0pt}
+    \item якутский - родной
+    \item русский - в совершенстве
+    \item английский - выше среднего
+\end{itemize}
+
+Водительское удостоверение: категория B, стаж 1 год
+
+Возможные командировки: нет
+
+Владение ПК: уверенный пользователь\\
+
+О себе:
+
+Без вредных привычек
+
+Оканчиваю 2 курс направления ФИИТ в СВФУ. Изучал в рамках образовательной программы языки: Java, C, C++, C\#, Pascal. Кроме языков ознакомлен с СУБД PostgreSQL, немного с MongoDB, архитектурой MIPS. Участвовал в личных и командных олимпиадах разного уровня по программированию. Некоторые лабораторные работы: \href{https://github.com/l4b13/}{github.com/l4b13}
+
+Хобби: видеоигры, прогулки на велосипеде, лыжах, спортивное программирование
+
+\end{document}
